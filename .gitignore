@@ -1,0 +1,11 @@
+# Ignore virtual environment directories (for Python projects)
+venv/
+.venv/
+
+# Ignore compiled bytecode files (for Python projects)
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore editor/IDE-specific files and directories
+.idea/
