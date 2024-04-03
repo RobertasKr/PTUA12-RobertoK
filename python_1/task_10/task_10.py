@@ -1,6 +1,4 @@
 """
- Visose užduotyse turi būti nurodyti tipų anotacijos❗
-
 Patys sukurkite bent 5 skirtingas funkcijas ir jas išbandykite.
 
 Sukurkite funkciją, kuri prie kiekvieno list nario prideda string galūnę.
