@@ -65,16 +65,27 @@ can_find(["th", "fo", "ma", "or"], ["the", "many", "for", "forest"])
 can_find(["oo", "mi", "ki", "la"], ["milk", "chocolate", "cooks", "cooks"])
 
 """
-Sukurkite funkciją, kuri priima eilučių sąrašą ir grąžina naują sąrašą, kuriame yra tik tos eilutės, kurios prasideda balsiu. Naudokite lambda funkcijas, kad įgyvendintumėte logiką, tikrinančią, ar eilutė prasideda balsiu.
+Sukurkite funkciją, kuri priima eilučių sąrašą ir grąžina naują sąrašą, kuriame yra tik tos eilutės, kurios prasideda balsiu.
+Naudokite lambda funkcijas, kad įgyvendintumėte logiką, tikrinančią, ar eilutė prasideda balsiu.
 """
 
-def printing_sentences(list_sentences: list, vowels: str):
-    lines_starts_with_vowels = []
-    # for line in list_sentences:
-    #     if str(line).startswith(vowels):
-    pass
+def check_row_starts(text: str):
+    starts_with_vowel = []
+    for t in text.splitlines():
+        for x in "AaEeIiOoUu":
+            if x in t[0]:
+                starts_with_vowel.append(t)
+    return starts_with_vowel
 
-vowels = "AaEeIiOoUu"
+sentence = """Aaa 
+BBBb
+Eeee
+CCccc
+Oooo
+"""
+
+print(check_row_starts(sentence))
+
 """
 multiplication= lambda x,y : x * y
 print(multiplication(2,3))
