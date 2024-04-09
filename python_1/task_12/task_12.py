@@ -33,7 +33,7 @@ def split_func_task_1(a: str):
     except AttributeError:
         raise AttributeError("Ivestas ne string")
 
-#print(split_func_task_1(634))
+# print(split_func_task_1("asdfafafs"))
 
 def divide_numbers(a: int, b: int):
     try:
@@ -41,11 +41,13 @@ def divide_numbers(a: int, b: int):
     except ZeroDivisionError:
         raise ZeroDivisionError("Dalyba is 0 negalima!!!")
     except TypeError:
-        raise TypeError("Ivestas ne skaicius!!!")
+        raise TypeError("Ivestas ne skaicius!!! TYPEERROR")
+    except ValueError:
+        raise ValueError("Ivestas ne skaicius!!! VALUEERROR")
     finally:
         print("Attempted division")
 
-#print(divide_numbers(10, "123"))
+# print(divide_numbers(10, 5))
 
 def task_3(a: int, b: int):
     try:
@@ -55,7 +57,7 @@ def task_3(a: int, b: int):
     except ZeroDivisionError:
         raise ZeroDivisionError("Dalyba is 0 negalima!!!")
     #return a, b
-try:
-    task_3(4, asfgr)
-except NameError:
-    raise NameError("Kazkas negerai")
+# try:
+#     task_3(4, asfgr)
+# except NameError:
+#     raise NameError("Kazkas negerai")
