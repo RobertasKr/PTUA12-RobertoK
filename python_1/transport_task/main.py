@@ -12,7 +12,7 @@ def get_vacation():
     vacation_end = vacation_start + timedelta(days=random.randint(1, 30))
     return [vacation_start.strftime("%Y-%m-%d"), vacation_end.strftime("%Y-%m-%d")]
 
-
+# Cia sukuriamos visos reikiamos reiksmes Vehicle klasei
 range_per_year = random.randint(8000, 25000)
 fuel_type = random.choice(["Gasoline", "Diesel", "Electric", "Hybrid"])
 plate_number = "".join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", k=6))
@@ -22,16 +22,16 @@ technical_inspection = datetime.today() + timedelta(days=random.randint(1, 365))
 driver_license = "".join(random.choices("ABCDT", k=1))
 consumption = round(random.uniform(5, 15), 2)  # Assuming liters/100km
 insurance_date = datetime.today() + timedelta(days=random.randint(1, 365))
-passangers = random.randint(4, 50)
 
-print("range_per_year:", range_per_year)
-print("fuel_type:", fuel_type)
-print("plate_number:", plate_number)
-print("expenses:", expenses)
-print("technical_inspection:", technical_inspection.strftime("%Y-%m-%d"))
-print("driver_license:", driver_license)
-print("consumption:", consumption)
-print("insurance_date:", insurance_date.strftime("%Y-%m-%d"))
+# Cia testavau, kokias reiksmes gaunu jas sukuriant
+# print("range_per_year:", range_per_year)
+# print("fuel_type:", fuel_type)
+# print("plate_number:", plate_number)
+# print("expenses:", expenses)
+# print("technical_inspection:", technical_inspection.strftime("%Y-%m-%d"))
+# print("driver_license:", driver_license)
+# print("consumption:", consumption)
+# print("insurance_date:", insurance_date.strftime("%Y-%m-%d"))
 
 vehicle1 = Vehicle(
     range_per_year,
@@ -91,7 +91,6 @@ print(vacation)
 
 truck1.get_transporting_plan(36)
 truck1.print_driver_can_drive(driver.driver_license)
-# print(truck1.get_transporting_plan(36))
 
 print(driver.vacation)
 driver.get_vacation()

@@ -24,10 +24,6 @@ class Vehicle:
 
     def get_need_inspection_next_month(self):
         time_now = datetime.now()
-        print(f"Time now: {time_now.year}-{time_now.month}")
-        print(
-            f"Time inspection: {self.technical_inspection.year}-{self.technical_inspection.month}"
-        )
         if (
             time_now.month == self.technical_inspection.month - 1
             and time_now.year == self.technical_inspection.year
