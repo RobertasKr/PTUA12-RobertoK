@@ -1,6 +1,7 @@
 """
 Ciklai
 """
+
 import time
 
 i = 10
@@ -21,4 +22,4 @@ for i in range(10):
         continue
     print(i)
 
-# iterable - visi listai, tuple, dict, string, 
+# iterable - visi listai, tuple, dict, string,

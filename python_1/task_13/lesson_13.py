@@ -59,11 +59,13 @@ For example, If the given int is 7536, the output shall be “6 3 5 7“, with a
 Exercise 13: Print multiplication table from 1 to 10 
 """
 
+
 def num_multiplication_table():
     for x in range(1, 11):
         result_list = []
         for i in range(1, 11):
             result_list.append(x * i)
         print(" ".join(str(a) for a in result_list))
+
 
 print(num_multiplication_table())

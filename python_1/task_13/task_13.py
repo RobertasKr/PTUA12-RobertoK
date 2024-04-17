@@ -27,7 +27,14 @@ Sukurkite funkciją, kuri perkelia failą iš vieno katalogo į kitą.
 
 Sukurkite funkciją, kuri ištrina failą.
 """
-from module_functions import string_actions, int_actions, list_actions, get_joke, name_all_files
+
+from module_functions import (
+    string_actions,
+    int_actions,
+    list_actions,
+    get_joke,
+    name_all_files,
+)
 from module_functions import create_new_catalog, rename_file, move_file, remove_file
 
 

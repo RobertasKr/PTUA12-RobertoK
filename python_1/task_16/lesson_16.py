@@ -16,6 +16,7 @@ class Animal:
         self.run()
         self.lipti_i_medi()
 
+
 animal = Animal()
 
 animal.begti_lipti_i_medi()

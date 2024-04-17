@@ -13,7 +13,9 @@ Vartotojas speja 3 kartus:
 
 Pagalvokite kokios turetu buti funckijos, nes cia galima ju sudelioti ne viena. ir rasykite funkcijas.
 # """
+
 from random import randint
+
 #
 # # def checking_number(rand_num: str, number_guess: str):
 # #     karves = 0
@@ -40,10 +42,12 @@ from random import randint
 #     if number in result:
 #         print(number)
 
-def generate_numbers():
-    return ''.join([str(randint(0,9)) for _ in range(4)])
 
-#print(generate_numbers())
+def generate_numbers():
+    return "".join([str(randint(0, 9)) for _ in range(4)])
+
+
+# print(generate_numbers())
 
 
 def check_cows_bulls(generated_number, player_prediction):
@@ -51,11 +55,12 @@ def check_cows_bulls(generated_number, player_prediction):
 
     for index, value in enumerate(player_prediction):
         if value == generated_number[index]:
-            bulls +=1
+            bulls += 1
         elif value in generated_number:
             cows += 1
 
     return cows, bulls
+
 
 def main():
     generated_number = generate_numbers()
@@ -70,4 +75,6 @@ def main():
         else:
             print(f"You have {bulls} bulls and {cows} cows")
     return "Game Over"
+
+
 print(main())

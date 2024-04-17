@@ -5,12 +5,14 @@ Most common three characters of the said string:
 [('s', 4), ('e', 3), ('f', 3)]
 """
 
+
 def find_common_elements(words: str):
     list_result = []
     for i in set(words):
         list_result.append((i, words.count(i)))
     list_result.sort(key=lambda x: x[1], reverse=True)
     return list_result[:3]
+
 
 print(find_common_elements("lkseropewdssafsdfafkpwe"))
 
@@ -41,8 +43,10 @@ Printing Final third list
 #         list_result.append(l2[i])
 #     return list_result
 
+
 def slice_two_lists(l1: list, l2: list):
     return l1[1::2] + l2[0::2]
+
 
 l1 = [3, 6, 9, 12, 15, 18, 21]
 l2 = [4, 8, 12, 16, 20, 24, 28]
@@ -66,8 +70,10 @@ Result is  {(6, 36), (8, 64), (4, 16), (5, 25), (3, 9), (7, 49), (2, 4)
 #         result.append((i, l2[i]))
 #     return set(result)
 
-def join_two_lists(l1: list, l2:list):
+
+def join_two_lists(l1: list, l2: list):
     return set(zip(l1, l2))
+
 
 first_list = [2, 3, 4, 5, 6, 7, 8]
 second_list = [4, 9, 16, 25, 36, 49, 64]
@@ -92,11 +98,13 @@ After removing unwanted elements from list [47, 69, 76, 97]
 #             list_result.append(value)
 #     return list_result
 
+
 def check_dictionary_key(l1: list, d1: dict):
     return [value for value in d1.values() if value in l1]
 
+
 roll_number = [47, 64, 69, 37, 76, 83, 95, 97]
-sample_dict = {'Jhon':47, 'Emma':69, 'Kelly':76, 'Jason':97}
+sample_dict = {"Jhon": 47, "Emma": 69, "Kelly": 76, "Jason": 97}
 
 print("ATS(one liner): ", check_dictionary_key(roll_number, sample_dict))
 
@@ -110,6 +118,7 @@ Expected Outcome:
 [47, 52, 44, 53, 54]
 """
 
+
 def change_dict_to_list(d1: dict):
     list_result = []
     for value in d1.values():
@@ -117,6 +126,17 @@ def change_dict_to_list(d1: dict):
             list_result.append(value)
     return list_result
 
-speed = {'jan': 47, 'feb': 52, 'march': 47, 'April': 44, 'May': 52, 'June': 53, 'july': 54, 'Aug': 44, 'Sept': 54}
+
+speed = {
+    "jan": 47,
+    "feb": 52,
+    "march": 47,
+    "April": 44,
+    "May": 52,
+    "June": 53,
+    "july": 54,
+    "Aug": 44,
+    "Sept": 54,
+}
 
 print(change_dict_to_list(speed))

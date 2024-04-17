@@ -2,6 +2,7 @@
 Parašykite funkciją, kuri paima du list'us ir prie pirmojo list pirmojo elemento prideda antrojo listpirmąjį elementą, antrojo sąrašo antrąjį elementą, antrojo sąrašo antrąjį elementą ir antrojo sąrašo antrąjį elementą. pirmąjį sąrašą su antruoju antrojo sąrašo elementu ir t. t., ir t. t. Grąžinkite True, jei visi elementų deriniai sudaro tą patį skaičių. Priešingu atveju grąžinama False. Pavyzdys:
 """
 
+
 def puzzle_pieces(list_numbers_1: list, list_numbers_2: list):
     list_result = []
     print(list_numbers_2, list_numbers_1)
@@ -25,6 +26,7 @@ Tarp lyginių ir nelyginių skaičių vyksta didelis karas. Šiame kare jau žuv
 Sukurkite funkciją, kuri paimtų sveikųjų skaičių sąrašą, atskirai suskaičiuotų lyginių ir nelyginių skaičių sumas, tada grąžintų lyginių ir nelyginių skaičių sumų skirtumą skaičių.
 """
 
+
 def war_of_numbers(list: list):
     even_numbers = []
     odd_numbers = []
@@ -41,6 +43,7 @@ def war_of_numbers(list: list):
         result = "Karas pasibaige lygiosiomis"
     return print(result)
 
+
 war_of_numbers([2, 8, 7, 5])
 war_of_numbers([12, 90, 75])
 war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243])
@@ -49,13 +52,13 @@ war_of_numbers([5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243])
 Jums duotas bigramų masyvas ir žodžių masyvas. Parašykite funkciją, kuri grąžintų True, jei iš šio masyvo galima rasti kiekvieną bigramą bent vieną kartą žodžių masyve.
 """
 
+
 def can_find(bigrams: list, words: list):
     words_sentence = " ".join(words)
     for bigram in bigrams:
         if bigram not in words_sentence:
             return print(False)
     return print(True)
-
 
 
 can_find(["at", "be", "th", "au"], ["beautiful", "the", "hat"])
@@ -69,6 +72,7 @@ Sukurkite funkciją, kuri priima eilučių sąrašą ir grąžina naują sąraš
 Naudokite lambda funkcijas, kad įgyvendintumėte logiką, tikrinančią, ar eilutė prasideda balsiu.
 """
 
+
 def check_row_starts(text: str):
     starts_with_vowel = []
     for t in text.splitlines():
@@ -76,6 +80,7 @@ def check_row_starts(text: str):
             if x in t[0]:
                 starts_with_vowel.append(t)
     return starts_with_vowel
+
 
 sentence = """Aaa 
 BBBb

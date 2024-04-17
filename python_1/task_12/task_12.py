@@ -18,6 +18,7 @@ Sukurkite mini "Python" programą, kuri įvestų du skaičius ir grąžintų jų
 Atnaujinkite ankstesnę užduotį su galimomis raise išimtimis.
 """
 
+
 def multiply_func_task_1(a: int):
     try:
         return a * a
@@ -25,7 +26,8 @@ def multiply_func_task_1(a: int):
         print("Ivestas ne sk")
         raise TypeError("Ivestas ne skaicius")
 
-#print(sum_func_task_1("253"))
+
+# print(sum_func_task_1("253"))
 def split_func_task_1(a: str):
     try:
         a.split()
@@ -33,7 +35,9 @@ def split_func_task_1(a: str):
     except AttributeError:
         raise AttributeError("Ivestas ne string")
 
+
 # print(split_func_task_1("asdfafafs"))
+
 
 def divide_numbers(a: int, b: int):
     try:
@@ -47,7 +51,9 @@ def divide_numbers(a: int, b: int):
     finally:
         print("Attempted division")
 
+
 # print(divide_numbers(10, 5))
+
 
 def task_3(a: int, b: int):
     try:
@@ -56,7 +62,9 @@ def task_3(a: int, b: int):
         raise TypeError("Ivestas ne skaicius!!!")
     except ZeroDivisionError:
         raise ZeroDivisionError("Dalyba is 0 negalima!!!")
-    #return a, b
+    # return a, b
+
+
 # try:
 #     task_3(4, asfgr)
 # except NameError:

@@ -11,6 +11,7 @@ Duotas listas skaiciu – [1, 2, 3, 4, 5, 6, 18, 90, 118, 991,  196151]. Grazint
 
 }
 """
+
 list_numbers = [1, 2, 3, 4, 5, 6, 18, 90, 118, 991, 196151]
 
 dict_result = {

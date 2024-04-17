@@ -41,9 +41,12 @@ DATA = {
 # ------------------------------- pavyzdys 2 --------------------------
 
 c = [1, 2, 3]
+
+
 def do_something(a, b):
     print(a, b, c)
     c = 8
     print(c)
+
 
 do_something(5, 10)

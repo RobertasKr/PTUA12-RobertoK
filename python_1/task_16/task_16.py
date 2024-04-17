@@ -1,7 +1,9 @@
 """
 Sukurkite Calculator klasę su pagrindinėmis funkcijomis: sudėti, dalyti, dauginti, atimti ir t. t.. Inicijuokite klasę ir parodykite keletą skaičiavimų.
 """
+
 print("-------------------------------1------------------------------")
+
 
 class Calculator:
 
@@ -37,6 +39,8 @@ Vardą ir pavardę suformuokite paprasčiausiai sujungdami vardą ir pavardę, a
 Elektroninį paštą suformuokite sujungdami vardą ir pavardę, tarp jų įterpdami simbolį . Pabaigoje įrašydami @company.com. Įsitikinkite, kad visas el. laiškas būtų** rašomas mažosiomis raidėmis**.
 """
 print("-------------------------------2------------------------------")
+
+
 class Worker:
 
     def __init__(self):
@@ -88,6 +92,8 @@ HP.get_title() ➞ "Pavadinimas: Haris Poteris"
 HP.get_author() ➞ "Autorius: Rowling"
 """
 print("-------------------------------3------------------------------")
+
+
 class Book:
 
     def __init__(self, name: str, author: str):
@@ -96,8 +102,10 @@ class Book:
 
     def get_title(self):
         print("Pavadinimas: " + self.name)
+
     def get_author(self):
         print("Autorius: " + self.author)
+
 
 PP = Book(name="Pride and Prejudice", author="Jane Austen")
 H = Book(name="Hamletas", author="Viljamas Šekspyras")
@@ -127,9 +135,10 @@ andorra.is_big ➞ False
 andorra.compare_pd(australia) ➞ "Andorra has a larger population density than Australia"
 """
 
+
 class Country:
 
-    def __init__(self, country: str, population: int,  area: int):
+    def __init__(self, country: str, population: int, area: int):
         self.country = country
         self.area = area
         self.population = population
@@ -145,10 +154,13 @@ class Country:
             print(f"{self.country} has a smaller population density than ")
         return country_name.population
 
+
 australia = Country("Australia", 23545500, 7692024)
 andorra = Country("Andorra", 76098, 468)
 
 print(australia.is_big)
 print(andorra.is_big)
-andorra.compare_pd(australia) #➞ "Andorra has a larger population density than Australia"
+andorra.compare_pd(
+    australia
+)  # ➞ "Andorra has a larger population density than Australia"
 print(andorra.compare_pd(australia))

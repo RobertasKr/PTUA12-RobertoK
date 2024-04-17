@@ -35,11 +35,14 @@
 # print([dauginti(x) for x in data_1])
 # map/filter -------------------------------
 
+
 # ----------------------------FUNCTIONS------------------------------
 def print_word():
     print("Swx")
 
+
 def return_word(word):
     return word
+
 
 print_word()

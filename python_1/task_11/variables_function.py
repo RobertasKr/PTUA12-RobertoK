@@ -7,9 +7,11 @@ def do_something(a, b, c, *args, **kwargs):
         print("word exist")
     print("Viskas")
 
+
 def another_function(a, **kwargs):
     print(a)
     print(kwargs)
+
 
 do_something(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, z=420, word=69)
 

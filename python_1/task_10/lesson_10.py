@@ -1,12 +1,14 @@
 def naujas():
     print("naujas")
 
-def return_function(a = 5):
+
+def return_function(a=5):
     if a == 5:
         return 8
     if a == 8:
-        return 8 ** 2
+        return 8**2
     print("cia jau po ifo")
+
 
 print(return_function())
 

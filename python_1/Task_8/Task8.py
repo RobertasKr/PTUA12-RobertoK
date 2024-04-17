@@ -1,6 +1,7 @@
 """
 Sukurkite kintamuosius, kuriuose reprezentuotų vartotojo vardą ir slaptažodį. Pradėkite begalinį ciklą, leidžiantį įvesti vartotojo vardą ir slaptažodį. Jei duomenys teisingi, sustabdykite begalinį ciklą ir išspausdinkite pasisveikinimo pranešimą.
 """
+
 print("------------------Task 1------------------")
 list_names = ["Robertas", "Linas", "Paulius"]
 list_passwords = ["12345", "54321", "67890"]

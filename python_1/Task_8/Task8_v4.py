@@ -35,7 +35,8 @@ Turi grazinti
 
 Prisiminkite ka sakiau apie mutable ir unmutuble – kurybos reiks
 """
-my_list = [3, 2, "m", "lele", (1, 2, 3), [1, 2, 3], {"vienas": 1,"du": 2}]
+
+my_list = [3, 2, "m", "lele", (1, 2, 3), [1, 2, 3], {"vienas": 1, "du": 2}]
 
 dict_result = {}
 

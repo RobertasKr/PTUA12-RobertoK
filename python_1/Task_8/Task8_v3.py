@@ -1,6 +1,7 @@
 """
 Yra stringas; ‚1asdg16asdg1wg16ewrg1er6gw1‘. Suskaiciuoti ir grazinti dicte kiek yra skaiciu ir kiek yra raidziu.
 """
+
 string_random = "1asdg16asdg1wg16ewrg1er6gw1"
 dict_result = {
     "Skaiciai": 0,

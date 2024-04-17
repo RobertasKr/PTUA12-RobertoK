@@ -13,12 +13,11 @@ duplicates = ""
 check_letters = ""
 print(list_words)
 for word in list_words:
-    #print(word)
+    # print(word)
     for letter in word:
-        #print(letter)
+        # print(letter)
         check_letters += letter
         if word.startswith(check_letters):
             print(duplicates, "-------")
             duplicates += letter
 print(duplicates, " DUPLIKATAI ")
-
