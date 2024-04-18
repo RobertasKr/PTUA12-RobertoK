@@ -28,5 +28,9 @@ class Bus(Vehicle):
         self.passengers = passengers
 
     def get_buses_needed_for_passengers(self, passengers_needed: int):
-        return (f"Pervezti {passengers_needed} keleivius, reikes {ceil(passengers_needed / self.passengers)} "
-                f"autobusu, kadangi autobusas talpina {self.passengers} zmoniu.")
+        return ceil(passengers_needed / self.passengers)
+
+    def get_sum_expenses_for_x_km(self, passengers_needed: int, x_km: int):
+        expenses_per_x_km = self.get_expenses_for_a_distance(x_km)
+        trips_count = self.get_buses_needed_for_passengers(passengers_needed)
+        return trips_count * expenses_per_x_km
