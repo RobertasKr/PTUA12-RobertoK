@@ -3,7 +3,9 @@ from python_1.tanks_game.enemy import Enemy
 from random import randint
 
 tank = Tank(direction="up", coordinates=[4, 4], shoots=[0, 0, 0, 3])
-enemy = Enemy(coordinates=[randint(0, 9), randint(0,9)])
+enemy = Enemy(coordinates=[randint(0, 9), randint(0, 9)])
+
+
 def draw_board():
     for y in range(10):
         for x in range(10):
@@ -18,8 +20,6 @@ def draw_board():
 
 draw_board()
 game_manager = input(f"Iveskite veiksma: \n")
-
-
 
 while game_manager != "stop":
     if game_manager == "a":

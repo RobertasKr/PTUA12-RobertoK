@@ -1,10 +1,13 @@
 from python_1.tanks_game.score import Score
+
+
 class Tank:
     def __init__(self, coordinates: list, direction: str, shoots: list):
         self.shoots = shoots
         self.direction = direction
         self.coordinates = coordinates
         self.score = Score()
+
     def info(self):
         return (f"Shots up: {self.shoots[0]}\n"
                 f"Shots right: {self.shoots[1]}\n"
@@ -19,6 +22,7 @@ class Tank:
         for x in self.shoots:
             result += x
         return result
+
     def shoot(self, enemy_coords: list, enemy):
         if self.direction == "up":
             for x in range(self.coordinates[1], 0, -1):
@@ -29,7 +33,7 @@ class Tank:
 
         if self.direction == "right":
             for x in range(self.coordinates[0], 11, 1):
-                if enemy_coords[1] == self.coordinates[1] and enemy_coords[0] == x :
+                if enemy_coords[1] == self.coordinates[1] and enemy_coords[0] == x:
                     print("|| PATAIKEI ||")
                     enemy.change_location(self.coordinates)
                     self.score.count_score(100)
@@ -78,6 +82,7 @@ class Tank:
         elif self.direction == "left" and self.coordinates[0] != 9:
             self.coordinates[0] += 1
             self.score.count_score(-10)
+
     def turn_left(self):
         if self.direction == "up":
             self.direction = "left"
@@ -107,4 +112,3 @@ class Tank:
             return "v"
         elif self.direction == "left":
             return "<"
-
