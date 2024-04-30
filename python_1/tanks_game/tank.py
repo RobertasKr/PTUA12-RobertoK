@@ -1,4 +1,5 @@
 from python_1.tanks_game.score import Score
+# from python_1.tanks_game.enemy import Enemy
 
 
 class Tank:
@@ -19,6 +20,7 @@ class Tank:
 
     def get_all_shots_fired(self):
         result = 0
+
         for x in self.shoots:
             result += x
         return result
